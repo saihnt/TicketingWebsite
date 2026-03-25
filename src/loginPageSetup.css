@@ -1,0 +1,115 @@
+.overallContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ece7df;
+  height: 100vh;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #f9f7f3;
+  width: min(100%, 760px);
+  padding: 2rem;
+  margin: auto;
+  border: 2px solid #4f4a43;
+  border-radius: 8px;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #8f877b; 
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border: 2px solid #4f4a43;
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.headerText h1,
+.headerText p {
+  margin: 0;
+}
+
+.subText {
+  margin-top: 0.35rem;
+  color: #5f574d;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  background-color: #8f877b;
+}
+
+.inputGroup label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.inputGroup input {
+  padding: 0.8rem 0.9rem;
+  border: 2px solid #7a7268;
+  background-color: #f3f0ea;
+  font-size: 1rem;
+}
+
+.utilityRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.loginButton {
+  padding: 0.9rem 1rem;
+  border: 2px solid;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a {
+  color: #2f5f7a;
+}
+/*@media means that ts will apply to the page pag ung page size is 640 or less*/
+@media (max-width: 640px) {
+  .loginContainer {
+    padding: 1.25rem;
+  }
+
+  .headerContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .utilityRow,
+  .supportLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
